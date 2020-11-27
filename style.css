@@ -157,4 +157,6 @@ body {
 }
 .open-source {
   text-decoration: none;
+  font-family: "Arvo", serif;
+  font-weight: bold;
 }
