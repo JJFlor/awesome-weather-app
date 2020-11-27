@@ -3,11 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Weather live</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/75ce01898d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body>
-    <h1>Hello Git</h1>
-    <script src="script.js"></script>
+  <body onload="setTime()">
+    <div class="container">
+      <div class="weather-app" id="form-control">
+       <form onsubmit=handleSubmit(event)>
+         <div class="row">
+           <div class="col-6">
+             <input
+               type="search"
+               placeholder="Enter city name"
+               autofocus="on"
+               autocomplete="off"
+               id="city-input"
+               class="form-control-input shadow-sm"
+              />
+            </div>
+             <div class="col-6">
+               <input 
+               type="submit" 
+               value="Search"
+               class="btn btn-primary"
+               />    
+             </div>
+            <div class="col-6">
+              <button 
+               class="btn btn-success"
+               id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+       <div class="cityW">
+         <ul class="currentStatus">
+           <li id="searchedCity">City</li>
+           <br />
+           <li id="currentDate">Sunday, 23:41h</li>
+           <br />
+           <li id="currentWeather"></li>
+         </ul>
+         <div class="row">
+           <div class="col-6">
+             <div>
+               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+               alt="cloudy"
+               class="weather-icon"
+               />
+              </div>
+              <div class="temperatureStyle">
+                <span id="temperature" ></span>
+                <span class="units">
+                °C
+                </span>
+              </div>
+            </div>
+            
+            <div class="col-6" id="currentLocation">
+              <ul class="humid-wind">
+                <li>
+                  Humidity: <span id="humidity"></span> % 
+                </li>
+                <br />
+                <li>
+                  Wind: <span id="wind"></span> km/h
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+          <table class="five-days">
+            <colgroup>
+              <col span="5" class="Monday">
+              <col span="5" class="Friday">
+            </colgroup>      
+            <tr class="week-Days">
+              <th scope="col">
+                Mon
+                <br />
+                <i class="fas fa-cloud"></i>
+                <br />
+                19º / 11º
+              </th>
+              <th scope="col">
+                Tue
+                <br />
+                <i class="fas fa-cloud-sun"></i>
+                <br />
+                13º / 7º
+              </th>
+              <th scope="col"> 
+                Wed
+                <br />
+                <i class="fas fa-cloud"></i>
+                <br />
+                11º / 4º 
+              </th>
+              <th scope="col">
+                Thu
+                <br />
+               <i class="fas fa-cloud-sun"></i>
+               <br />
+               11º / 6º
+              </th>
+             <th scope="col"> 
+               Fri
+               <br />
+               <i class="fas fa-cloud"></i>
+               <br />
+               11º / 4º
+              </th>
+           </tr>    
+          </table>
+     </div>
+     <script src="script.js"></script>
   </body>
 </html>
