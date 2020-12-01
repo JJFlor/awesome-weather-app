@@ -20,8 +20,9 @@
   </head>
   <body onload="setTime()">
     <div class="container">
-      <div class="weather-app" id="form-control">
-       <form onsubmit=handleSubmit(event)>
+     <div class="weather-app-wrapper">
+       <div class="weather-app" id="form-control">
+        <form onsubmit=handleSubmit(event)>
          <div class="row">
            <div class="col-6">
              <input
@@ -50,9 +51,9 @@
             </div>
           </div>
         </form>
-       <div class="cityW">
+        <div class="cityW">
          <ul class="currentStatus">
-           <li id="searchedCity">City</li>
+           <li id="searchedCity" class="currentCity">City</li>
            <br />
            <li id="currentDate">Sunday, 23:41h</li>
            <br />
@@ -86,8 +87,7 @@
               </ul>
             </div>
           </div>
-        </div>
-          
+        </div>  
         <form>
           <table class="five-days" id="fiveDaysForecast">
             <colgroup>
@@ -132,11 +132,12 @@
               </th>
            </tr>    
           </table>
-          <small>
-            <a href="https://github.com/JJFlor/awesome-weather-app" class="open-source" target="_blank">Open Source Code</a>
-            , by Júlia Jaile Flores
-          </small>
-        </form>
+         </form>
+       </div>
+        <small>
+         <a href="https://github.com/JJFlor/awesome-weather-app" class="open-source" target="_blank">Open Source Code</a>
+          , by Júlia Jaile Flores
+        </small>
      </div>
      <script src="src/script.js"></script>
   </body>

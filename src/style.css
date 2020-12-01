@@ -5,17 +5,33 @@ body {
     #c5c1ff 56%,
     #ffbac3 100%
   );
+  font-family: "Arvo", serif;
 }
-
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  line-height: 10px;
+  padding: 0;
+  margin: 0;
+}
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 800px;
+}
 .weather-app {
   border: none;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #52057b;
+  box-shadow: 4px 4px 4px #8675a9;
+  border-radius: 5px;
+  border-spacing: 5px 5px;
 }
 
 .form-control-input {
+  margin-bottom: 17px;
   border-radius: 5px;
   height: 20px;
   line-height: 30px;
@@ -66,27 +82,14 @@ body {
 }
 .currentStatus {
   color: black;
-  list-style: none;
-  font-family: "Arvo", serif;
+  font-size: 20px;
+}
+.currentCity {
   font-size: 30px;
-  font-weight: bold;
-  text-align: justify;
-  line-height: 28px;
-  padding: 10px;
 }
 .cityW {
-  border: 2px solid #52057b;
-  box-shadow: 4px 4px 4px #8675a9;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  font-family: "Arvo", serif;
-  font-size: 30px;
-  font-weight: bold;
   text-align: justify;
-  line-height: 40px;
-  border-spacing: 5px 5px;
-  padding: 10px;
+  border: none;
 }
 .weather-icon {
   display: inline;
@@ -98,30 +101,23 @@ body {
 .temperatureStyle {
   display: block;
   margin: -61px 112px;
-  font-size: 40px;
+  font-size: 50px;
   color: #52057b;
-  box-sizing: none;
   font-weight: bold;
   text-align: left;
   line-height: 1;
 }
 .units {
-  font-size: 17px;
+  font-size: 15px;
   position: relative;
-  top: -14px;
+  top: -16px;
 }
 
 .humid-wind {
-  list-style: none;
   font-size: 17px;
-  display: inline-block;
-  margin: -132px 387px 16px;
-  padding: 17px;
-  font-weight: 100;
-  line-height: 1;
-  font-family: "Arvo", serif;
+  max-width: 150px;
+  padding: 10px;
   border-radius: 5px;
-  border: none;
   background-color: #8675a9;
   color: white;
   box-shadow: 3px 3px 3px #52057b;
@@ -133,7 +129,6 @@ body {
   width: 24.5em;
   text-align: center;
   vertical-align: middle;
-  font-family: "Arvo", serif;
   font-size: 25px;
   font-weight: bold;
   margin: 27px -6px;
@@ -141,7 +136,6 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 4px 4px 4px#cc0e74;
-  text-align: center;
   color: #cc0e74;
   background-image: linear-gradient(
     to top,
@@ -152,6 +146,5 @@ body {
 }
 .open-source {
   text-decoration: none;
-  font-family: "Arvo", serif;
   font-weight: bold;
 }
