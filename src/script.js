@@ -48,6 +48,19 @@ function setTime() {
         navigator.geolocation.getCurrentPosition(searchLocation);
        }
 
+      //function showFiveDaysForecast (response) {
+      //document.querySelector("#fiveDaysForecast").innerHTML = apiUrl; 
+      //console.log(apiUrl);
+      //}
+    
+      //function getFiveDaysForecast(event) {
+         //event.preventDefault();
+         //let apiKey = "755fa0d585548b254a8058369f909e72";
+         //let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+         //axios.get(apiUrl).then(showFiveDaysForecast);
+       //}
+
+
    let currentLocationButton = document.querySelector("#current-location-button");
    currentLocationButton.addEventListener ("click", getCurrentLocation);
 
