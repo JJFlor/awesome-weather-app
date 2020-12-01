@@ -31,13 +31,10 @@ body {
 }
 .btn-primary {
   display: block;
-  margin: 20px 15px;
   background-color: #52057b;
   color: white;
   border: none;
   border-radius: 5px;
-  height: 34px;
-  padding: 11px;
   text-align: center;
   width: 110px;
   font-size: 15px;
@@ -52,12 +49,10 @@ body {
 
 .btn-success {
   display: block;
-  margin: 20px 15px;
   background-color: #52057b;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 11px;
   text-align: center;
   width: 110px;
   font-size: 15px;
