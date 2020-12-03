@@ -107,6 +107,13 @@ li {
   text-align: left;
   line-height: 1;
 }
+.temperature-style .active {
+  color: #52057b;
+  cursor: default;
+}
+.temperature-style .active:hover {
+  text-decoration: none;
+}
 .units {
   font-size: 16px;
   position: relative;
