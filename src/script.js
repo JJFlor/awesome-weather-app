@@ -1,27 +1,28 @@
-function setTime() {
-         let currentDate = document.querySelector("#currentDate");
-         let now = new Date();
 
-         let days =["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-         let day = days[now.getDay()];
-    
-         let hours = now.getHours();
-         let minutes = now.getMinutes();
-    
-           if (minutes < 10) {
+      function formatDate (timestamp) {
+        let date = new Date(timestamp);
+        let hours = date.getHours();
+          if (hours < 10) {
+             hours = `0${hours}`;
+          }
+        let minutes = date.getMinutes();
+          if (minutes < 10) {
              minutes = `0${minutes}`;
-           }
-    
-         let currentDayText = `${day}, ${hours}:${minutes}`;
-          currentDate.innerHTML = currentDayText;
-       }
+          }
+        let days =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let day = days[date.getDay()];
+
+        return `${day} ${hours}:${minutes}`;
+      }
 
       function showTemp(response) { 
+        console.log(response);
          document.querySelector("#searchedCity").innerHTML = response.data.name;
          document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
          document.querySelector("#humidity").innerHTML = response.data.main.humidity;
          document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
          document.querySelector("#currentWeather").innerHTML = response.data.weather[0].main;
+         document.querySelector("#currentDate").innerHTML = formatDate(response.data.dt*1000);
        }
 
       function searchCity (city){
@@ -47,18 +48,6 @@ function setTime() {
         event.preventDefault();
         navigator.geolocation.getCurrentPosition(searchLocation);
        }
-
-      //function showFiveDaysForecast (response) {
-      //document.querySelector("#fiveDaysForecast").innerHTML = apiUrl; 
-      //console.log(apiUrl);
-      //}
-    
-      //function getFiveDaysForecast(event) {
-         //event.preventDefault();
-         //let apiKey = "755fa0d585548b254a8058369f909e72";
-         //let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-         //axios.get(apiUrl).then(showFiveDaysForecast);
-       //}
 
 
    let currentLocationButton = document.querySelector("#current-location-button");
