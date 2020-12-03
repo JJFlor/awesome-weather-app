@@ -91,14 +91,14 @@ li {
   text-align: justify;
   border: none;
 }
-.weather-icon {
+.weather-icon img {
   display: inline;
   height: 70px;
   width: 70px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.temperatureStyle {
+.temperature-style {
   display: block;
   margin: -61px 112px;
   font-size: 50px;
@@ -108,9 +108,9 @@ li {
   line-height: 1;
 }
 .units {
-  font-size: 15px;
+  font-size: 16px;
   position: relative;
-  top: -16px;
+  top: -25px;
 }
 
 .humid-wind {
@@ -147,4 +147,7 @@ li {
 .open-source {
   text-decoration: none;
   font-weight: bold;
+}
+.overview {
+  margin-bottom: 20px;
 }

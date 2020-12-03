@@ -52,26 +52,25 @@
           </div>
         </form>
         <div class="cityW">
-         <ul class="currentStatus">
-           <li id="searchedCity" class="currentCity">City</li>
-           <br />
-           <li id="currentDate">Sunday, 23:41h</li>
-           <br />
-           <li id="currentWeather"></li>
-         </ul>
+         <div class="overview">
+           <ul class="currentStatus">
+              <li id="searchedCity" class="currentCity">City</li>
+              <br />
+              <li id="currentDate">Sunday, 23:41h</li>
+              <br />
+              <li id="currentWeather"></li>
+            </ul>
+         </div>
          <div class="row">
            <div class="col-6">
-             <div>
+             <div class="clearfix weather-icon">
                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
                alt="cloudy"
-               class="weather-icon"
+               class="float-left"
                />
               </div>
-              <div class="temperatureStyle">
-                <span id="temperature" ></span>
-                <span class="units">
-                °C|°F
-                </span>
+              <div class="temperature-style float-left">
+                <span id="temperature" ></span><span class="units">°C | <a href="#">°F</a></span>
               </div>
             </div>
             
