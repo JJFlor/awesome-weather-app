@@ -1,10 +1,4 @@
 body {
-  background-image: linear-gradient(
-    -225deg,
-    #2cd8d5 0%,
-    #c5c1ff 56%,
-    #ffbac3 100%
-  );
   font-family: "Arvo", serif;
 }
 ul {
@@ -81,13 +75,15 @@ li {
   background-color: #8675a9;
 }
 .currentStatus {
-  color: black;
+  color: #8675a9;
   font-size: 20px;
 }
 .currentCity {
+  color: #52057b;
   font-size: 30px;
 }
 .cityW {
+  text-transform: capitalize;
   text-align: justify;
   border: none;
 }
@@ -129,27 +125,37 @@ li {
   color: white;
   box-shadow: 3px 3px 3px #52057b;
 }
-.fa-cloud-sun {
-  font-size: 30px;
-}
-.five-days {
-  width: 24.5em;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 27px -6px;
-  padding: 6px;
+.weather-forecast {
+  margin-top: 10px;
+  padding: 10px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px#cc0e74;
-  color: #cc0e74;
-  background-image: linear-gradient(
-    to top,
-    #dad4ec 0%,
-    #dad4ec 1%,
-    #f3e7e9 100%
-  );
+  color: #52057b;
+}
+
+.weather-forecast h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding: 7px;
+}
+
+.weather-forecast i {
+  display: block;
+  line-height: normal;
+  margin: 0 auto;
+  height: 24px;
+  width: 20px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
 .open-source {
   text-decoration: none;
