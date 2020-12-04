@@ -4,6 +4,7 @@ body {
 ul {
   padding: 0;
   margin: 0;
+  margin-block-start: 0.5em;
 }
 li {
   list-style: none;
@@ -13,10 +14,9 @@ li {
 }
 .weather-app-wrapper {
   margin: 30px auto;
-  max-width: 800px;
+  max-width: 700px;
 }
 .weather-app {
-  border: none;
   padding: 20px;
   border: 1px solid #52057b;
   box-shadow: 4px 4px 4px #8675a9;
@@ -29,7 +29,7 @@ li {
   border-radius: 5px;
   height: 20px;
   line-height: 30px;
-  width: 250px;
+  width: 300px;
   vertical-align: middle;
   padding: 5px 10px 5px 10px !important;
   font-size: 1rem;
@@ -46,7 +46,7 @@ li {
   border: none;
   border-radius: 5px;
   text-align: center;
-  width: 110px;
+  width: 120px;
   font-size: 15px;
   box-shadow: 4px 4px 4px #8675a9;
 }
@@ -64,7 +64,7 @@ li {
   border: none;
   border-radius: 5px;
   text-align: center;
-  width: 110px;
+  width: 120px;
   font-size: 15px;
   box-shadow: 4px 4px 4px #8675a9;
 }
@@ -91,12 +91,12 @@ li {
   display: inline;
   height: 70px;
   width: 70px;
-  margin-right: 10px;
+  margin: 6px 9px;
 }
 
 .temperature-style {
   display: block;
-  margin: -61px 112px;
+  margin: -63px 100px;
   font-size: 50px;
   color: #52057b;
   font-weight: bold;
@@ -117,8 +117,8 @@ li {
 }
 
 .humid-wind {
-  font-size: 17px;
-  max-width: 150px;
+  font-size: 14px;
+  max-width: 127px;
   padding: 10px;
   border-radius: 5px;
   background-color: #8675a9;
@@ -127,26 +127,25 @@ li {
 }
 .weather-forecast {
   margin-top: 10px;
-  padding: 10px;
-  border: none;
   color: #52057b;
 }
 
 .weather-forecast h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   height: 15px;
   line-height: 15px;
-  padding: 7px;
+  margin-top: 20px;
+  padding-top: 7px;
 }
 
-.weather-forecast i {
+.weather-forecast img {
   display: block;
   line-height: normal;
   margin: 0 auto;
-  height: 24px;
-  width: 20px;
+  height: 48px;
+  width: 48px;
 }
 
 .weather-forecast-temperature {
