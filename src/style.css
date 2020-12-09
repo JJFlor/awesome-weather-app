@@ -12,14 +12,29 @@ li {
   padding: 0;
   margin: 0;
 }
+
+.background_img {
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .weather-app-wrapper {
   margin: 30px auto;
   max-width: 700px;
+  position: relative;
+  z-index: 2;
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #52057b;
-  box-shadow: 4px 4px 4px #8675a9;
+  border: 2px solid #52057b;
   border-radius: 5px;
   border-spacing: 5px 5px;
 }
@@ -41,38 +56,36 @@ li {
 }
 .btn-primary {
   display: block;
-  background-color: #52057b;
-  color: white;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #52057b;
   border: none;
   border-radius: 5px;
   text-align: center;
   width: 120px;
   font-size: 15px;
-  box-shadow: 4px 4px 4px #8675a9;
+  box-shadow: 2px 2px 2px #8675a9;
 }
 .btn-primary:hover {
   cursor: pointer;
   transition: 200ms ease-in-out;
-  color: white;
-  background-color: #8675a9;
+  color: #8675a9;
 }
 
 .btn-success {
   display: block;
-  background-color: #52057b;
-  color: white;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #52057b;
   border: none;
   border-radius: 5px;
   text-align: center;
   width: 120px;
   font-size: 15px;
-  box-shadow: 4px 4px 4px #8675a9;
+  box-shadow: 2px 2px 2px #8675a9;
 }
 .btn-success:hover {
   cursor: pointer;
   transition: 200ms ease-in-out;
-  color: white;
-  background-color: #8675a9;
+  color: #8675a9;
 }
 .currentStatus {
   color: #8675a9;
@@ -118,12 +131,12 @@ li {
 
 .humid-wind {
   font-size: 14px;
-  max-width: 127px;
+  text-align: center;
+  max-width: 135px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #8675a9;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   color: white;
-  box-shadow: 3px 3px 3px #52057b;
 }
 .weather-forecast {
   margin-top: 10px;

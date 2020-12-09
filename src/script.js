@@ -8,6 +8,7 @@
       }
 
       function showTemp(response) { 
+        console.log(response);
         celsiusTemperature = response.data.main.temp; 
 
          document.querySelector("#searchedCity").innerHTML = response.data.name;
