@@ -15,13 +15,22 @@
     ></script>
 
     <link rel="stylesheet" href="src/style.css"></script>
+    
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script type='text/javascript' src='loadImg.js'></script>
+    <script type='text/javascript'>
+      $(function(){
+           $('img').imgPreload()
+      })
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
   </head>
   <body>
-    <div class="background_img">
-      <img src="https://images.pexels.com/photos/1028600/pexels-photo-1028600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=650">
-    </div>
+     <div class="background_img images">
+       <img src="https://images.pexels.com/photos/1028600/pexels-photo-1028600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=650">
+     </div>
     <div class="container">
      <div class="weather-app-wrapper">
        <div class="weather-app" id="form-control">
@@ -66,7 +75,7 @@
          </div>
          <div class="row">
            <div class="col-6">
-             <div class="clearfix weather-icon">
+             <div class="clearfix images">
                <img src="" 
                alt=""
                class="float-left"

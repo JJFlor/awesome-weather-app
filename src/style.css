@@ -105,8 +105,8 @@ li {
   text-align: justify;
   border: none;
 }
-.weather-icon img {
-  display: inline;
+.images {
+  display: inline-block;
   height: 70px;
   width: 70px;
   margin: 6px 9px;
