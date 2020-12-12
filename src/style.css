@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "Arvo", serif;
 }
@@ -14,23 +18,23 @@ li {
 }
 
 .background_img {
-  z-index: 1;
-  opacity: 0.2;
+  opacity: 0.1;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
+  background-position: center;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .weather-app-wrapper {
   margin: 30px auto;
   max-width: 700px;
   position: relative;
-  z-index: 2;
 }
 .weather-app {
   padding: 20px;
@@ -52,6 +56,7 @@ li {
   color: black;
   border: 2px solid #407088;
   box-sizing: unset;
+  float: left;
 }
 .btn-primary {
   display: block;
@@ -61,6 +66,7 @@ li {
   border-radius: 5px;
   text-align: center;
   width: 120px;
+  float: left;
   font-size: 15px;
   box-shadow: 1px 1px 1px #ff414d;
 }
@@ -78,6 +84,7 @@ li {
   border-radius: 5px;
   text-align: center;
   width: 120px;
+  float: left;
   font-size: 15px;
   box-shadow: 1px 1px 1px #ff414d;
 }
@@ -85,6 +92,14 @@ li {
   cursor: pointer;
   transition: 200ms ease-in-out;
   background-color: #70adb5;
+}
+
+@media screen and (max-width: 800px) {
+  .form-control-input,
+  .btn-primary,
+  .btn-success {
+    width: 100%;
+  }
 }
 .currentStatus {
   color: #41aea9;
@@ -108,16 +123,15 @@ li {
   display: inline-block;
   height: 70px;
   width: 70px;
-  margin: 6px 9px;
+  margin: 8px -4px;
 }
 
 .temperature-style {
   display: block;
-  margin: -63px 100px;
+  margin: -60px 100px;
   font-size: 50px;
   color: #407088;
   font-weight: bold;
-  text-align: left;
   line-height: 1;
 }
 .temperature-style .active {
@@ -130,14 +144,14 @@ li {
 .units {
   font-size: 16px;
   position: relative;
-  top: -25px;
+  top: -28px;
 }
 
 .humid-wind {
   font-size: 14px;
   text-align: center;
-  max-width: 135px;
-  padding: 10px;
+  max-width: 130px;
+  padding: 8px;
   border-radius: 5px;
   background-color: #ffcbcb;
   color: #ff414d;
