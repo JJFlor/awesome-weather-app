@@ -60,36 +60,40 @@ li {
 }
 .btn-primary {
   display: block;
+  margin: -1px 12px;
   background-color: #ffcbcb;
   color: #ff414d;
   border: none;
   border-radius: 5px;
   text-align: center;
-  width: 120px;
+  width: 105px;
   float: left;
   font-size: 15px;
   box-shadow: 1px 1px 1px #ff414d;
 }
 .btn-primary:hover {
   cursor: pointer;
+  color: #ff414d;
   transition: 200ms ease-in-out;
   background-color: #70adb5;
 }
 
 .btn-success {
   display: block;
+  margin: -1px -24px;
   background-color: #ffcbcb;
   color: #ff414d;
   border: none;
   border-radius: 5px;
   text-align: center;
-  width: 120px;
+  width: 105px;
   float: left;
   font-size: 15px;
   box-shadow: 1px 1px 1px #ff414d;
 }
 .btn-success:hover {
   cursor: pointer;
+  color: #ff414d;
   transition: 200ms ease-in-out;
   background-color: #70adb5;
 }
@@ -163,7 +167,7 @@ li {
   border: none;
   border-radius: 5px;
   text-align: center;
-  background-color: #41aea9;
+  background-color: #aee6e6;
 }
 
 .weather-forecast h3 {
