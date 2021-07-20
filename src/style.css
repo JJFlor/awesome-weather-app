@@ -98,13 +98,6 @@ li {
   background-color: #70adb5;
 }
 
-@media screen and (max-width: 800px) {
-  .form-control-input,
-  .btn-primary,
-  .btn-success {
-    width: 100%;
-  }
-}
 .currentStatus {
   color: #41aea9;
   font-size: 20px;
@@ -197,6 +190,9 @@ li {
   line-height: 15px;
   white-space: nowrap;
 }
+.weather-forecast-temp-min {
+  display: inline;
+}
 .open-source {
   text-decoration: none;
   font-weight: bold;
@@ -204,4 +200,52 @@ li {
 }
 .overview {
   margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .form-control-input {
+    width: 105%;
+  }
+  .btn-primary {
+    width: 150%;
+    margin: -1px 29px;
+  }
+  .currentCity {
+    font-size: 26px;
+  }
+  .float-left {
+    width: 100%;
+  }
+  .temperature-style {
+    font-size: 37px;
+    margin: -68px 73px;
+  }
+  .units {
+    font-size: 13px;
+  }
+  .humid-wind {
+    max-width: 107px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .weather-forecast {
+    margin: 0;
+    padding-right: 22px;
+  }
+  .weather-forecast h3 {
+    font-size: 12px;
+    margin-right: -29px;
+  }
+  .weather-forecast img {
+    height: 43px;
+    width: 43px;
+    margin-right: 8px;
+  }
+  .weather-forecast-temperature {
+    font-size: 11px;
+    margin-left: 14px;
+  }
+  .weather-forecast-temp-min {
+    display: none;
+  }
 }

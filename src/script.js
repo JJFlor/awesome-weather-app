@@ -56,8 +56,10 @@
              <div class="weather-forecast-temperature">
                 <strong>
                 ${Math.round(forecast.main.temp_max)}º
-                </strong>  
+                </strong>
+                <div class="weather-forecast-temp-min"> 
                 ${Math.round(forecast.main.temp_min)}º
+                </div> 
               </div>
             </div>
           `;
